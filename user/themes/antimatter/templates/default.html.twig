@@ -1,0 +1,36 @@
+{% extends 'partials/base.html.twig' %}
+{% block content %}
+	{% if page.url|starts_with('/circuit') %}
+		<header id="circuit" class="column">
+			<h2 id="circuit-title">{{ page.header.circuit }} </h2>
+			<img src="{{ page.parent.url }}/{{ page.header.circuitimage }}" >
+		</header>
+	{% else  %}
+		<header id="circuit" class="column">
+			<h2 id="circuit-title">Informations</h2>
+			<img src="{{ page.parent.url }}/{{ page.header.circuitimage }}" >
+		</header>
+	{% endif %}
+	<nav id="pointingmenu" class="ui stackable secondary pointing menu">
+		{% for p in page.collection %}
+			<a href="{{ p.url }}/#pointingmenu" title="{{ p.title }}" class="item {% if page.slug == p.slug %}active{% endif %}">{{ p.menu}}</a>
+			
+		{% endfor %}
+	</nav>
+	<h2 class="header">{{ page.title}}</h2>
+	<article class="column">
+		{{ page.content }}
+	</article>
+	
+	<nav id="prevnext" class="secondary menu">
+		{% if not page.isFirst %}
+			<a class="ui left floated button" href="{{ page.nextSibling.url }}"><i class="ui icon arrow left"></i> {{ page.nextSibling.menu }}</a>
+		{% endif %}
+		{% if not page.isLast %}
+			<a class="ui right floated button" href="{{ page.prevSibling.url }}"> {{ page.prevSibling.menu }}<i class="ui icon arrow right"></i></a>
+		{% endif %}
+		{% for p in page.nextSibling %}
+			<p>{{ page.nextSibling.title }}</p>
+		{% endfor %}
+	</nav>
+{% endblock %}

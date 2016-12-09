@@ -1,0 +1,56 @@
+title: 'Le Mexique a La Carte'
+author:
+  name: "Josée Turbis"
+  email: john@email.com
+taxonomies:
+  - category
+  - tag
+metadata:
+  description:  "Mexique à la carte vous offre un service d’accompagnement en français au cours de circuits inédits dans différents États du Mexique. "
+summary:
+  enabled: true
+  format: short
+  size: 300
+  delimiter: '==='
+blog:
+  route: /blog
+logo:
+  image: /img/logo.svg
+  text: Le Mexique a la Carte
+  url: http://lemexique.charal
+userlinks:
+  -
+    text: 'Sample link'
+    url: '#'
+  -
+    text: 'Another Sample link'
+    url: '#'
+header:
+  title: 'Le Mexique a la Carte'
+  description: 'Voyages aux Mexique a tu manera avec acompanement en Français.'
+  buttons:
+    -
+      text: 'Allons Nous!'
+      url: 'http://tympanus.net/codrops/?p=19439'
+      icon: sketch
+footer:
+  links:
+    -
+      text: 'Terms &amp; Conditions'
+      url: '#'
+    -
+      text: Legals
+      url: '#'
+socialcount:
+  url: 'http://www.getgrav.org'
+  facebook_url: '#'
+  twitter_url: 'http://www.twitter.com/getgrav'
+  linkedin_url: '#'
+copyright: 'Josée Turbis 2016. <br> Designed and developed by Corin Royal Drummond from Papalote Online.'
+menu:
+  -
+    text: 'Page d''Acueill'
+    url: 'http://lemexique.charal'
+  -
+    text: 'Les Circuits'
+    url: 'http://lemexique.charal#circuits'

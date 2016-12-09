@@ -1,0 +1,25 @@
+{{ page.content }}
+<p>&nbsp;</p>
+<div class="ui grid">
+	{% for item in page.header.circuits %}
+		<div class="sixteen wide column">
+			<div class="ui items">
+				<a class="item" href="{{ item.link }}">
+					<div class="image">
+						{% if item.image %}
+							<img class="ui fluid image" src="{{ page.url }}/{{ item.image }}">
+						{% endif %}
+					</div>
+					<div class="content">
+						{% if item.title %}
+							<h2 class="header">{{ item.title }}</h2>
+						{% endif %}
+						{% if item.text %}
+							<p class="description">{{ item.text }}</p>
+						{% endif %}
+					</div>
+				</div>
+			</a>
+		</div>
+	{% endfor %}
+</div>

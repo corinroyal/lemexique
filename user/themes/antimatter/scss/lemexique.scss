@@ -1,0 +1,223 @@
+@mixin box-shadow($shadow...) {
+  $shadow: set-arglist-default($shadow, default-box-shadow());
+  @include prefixed-properties(css-boxshadow, $box-shadow-support-threshold, (box-shadow: $shadow));
+}
+@mixin border-radius($radius) {
+  -webkit-border-radius: $radius;
+     -moz-border-radius: $radius;
+      -ms-border-radius: $radius;
+          border-radius: $radius;
+}
+@import 'https://fonts.googleapis.com/css?family=Lora:400,400i,700|Yanone+Kaffeesatz:400,700';
+@font-face {
+  font-family: 'Goudy1911';
+  src: url('goudy1911.woff2') format('woff2'),
+       url('goudy1911.woff') format('woff'),
+       url('goudy1911.otf') format('opentype');
+}
+$brown: #4D3726;
+$footercolor: #545E1E;
+$brick: rgba(135, 55, 43, 1);
+$ltbrick: rgba(144, 64, 55, 0.85);
+
+html {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+body{
+	background: #fff url('../img/washi.png') repeat;
+	color: $brown;
+
+}
+
+*::-moz-selection, .ui.items > .item > .content > .header, .ui.items > .item > .content > .header {
+    color: $brick;
+} 
+h1 {
+	font-weight: 700;
+	text-transform: uppercase;
+	border: 2rem;
+	color: $brick;
+}
+h2 {
+	font-weight: 700;
+	border: 2rem;
+	color: $brick;
+}
+h3,h4,h5,h6 {
+	font-weight: 400;
+
+}
+h3 {
+	color: $brick;
+}
+h4 {
+	color: $ltbrick;
+}
+h5,h6 {
+	font-style: italic;
+	color: $ltbrick;
+}
+
+h2 {
+}
+p  {
+	max-width: 42rem;
+	text-align: justify; 
+}
+.ui.message {
+	color: $brown;
+}
+img {
+	width: 100%;
+}
+nav img {
+	box-shadow: none;
+}
+
+
+#logo {
+	margin: 2rem 1rem 0rem 0rem; 
+	width: 100%;
+	font-family: Goudy1911;
+}
+
+#logo img {
+	max-width: 6rem;
+	display: block;
+	float: left;
+	box-shadow: none;
+	margin-right: 1rem;
+}
+#logo a {
+	color: $brown;
+	text-decoration: none;
+}
+#logo h1 {
+	margin-top: 2rem;
+	float: left;
+	text-shadow: 5px 5px 3px #ccc;
+	color: $brown;
+	max-width: 30rem;
+	font-family: Goudy1911;
+	font-size: 1.8rem;
+}
+
+main {
+	background-color: #fff;
+	@include border-radius(30px);
+}
+
+.ui.message {
+	color: $brown;
+}
+.items {
+	margin-top: 2rem;
+}
+.item:hover, .card:focus{
+	 filter: brightness(1.2);
+}
+.items p {
+	color: $brown;
+	text-decoration: none;
+	
+
+
+}
+.item img {
+	width: 90%;
+
+}
+.item h2 {
+	padding: 0rem;
+	text-align: center;
+}
+.fuerte {
+	font-size: 1.3rem;
+	margin-top: 1.3rem;
+	}
+
+#circuit-title {
+	margin-left: 0.5rem;
+}
+#circuit-title strong {
+	color: $brown;
+	font-weight: bold;
+
+}
+
+#circuit img {
+	width: 100%;
+	box-shadow: none;
+
+}
+
+#circuit p {
+	    margin-left: 2em;
+	    margin-bottom: 1em;
+}
+
+#_accompagnatrice img {
+	float: right;
+	width: 50%;
+	margin-left: 2rem;
+}
+.ui.menu {
+	color: $brown;
+	font-family: Lato;
+}
+footer {
+	background-color: $footercolor;
+	color: #EBE9D1;
+	margin-top: 4rem;
+	border-radius: 2vw 2vw 0 0;
+	font-family: Lato;
+
+}
+
+.ui.form .field > label {
+	color: #ffffff;
+}
+.ui.button.left {
+	float: left;
+}
+.ui.button.right {
+	float: right;
+}
+.noshadow {
+	box-shadow: none;
+	background: #fff url('../img/altar3.jpg') no-repeat;
+	height: 0.2rem;
+	border: none;
+
+}
+.ui.images.medium {
+	padding: 1rem 0;
+}
+.ui.inverted.link.list a { color: #FE9642; }
+section figure { 
+	margin: 1rem 0 0 0; 
+	padding: 0;
+	width: 100%;
+}
+section figure img {
+	width: 100%;
+	margin-top: 2rem;
+}
+figcaption, span.caption {
+	font-size: 0.65rem;
+	padding: 0;
+	margin: 0.1rem 0 2rem 0;
+	line-height: 0.8rem;
+	float: right;
+	text-align: right;
+	font-family: Lato;
+}
+ section {
+	margin-bottom: 3rem; 
+}
+.menu .item {
+  background-color: red; 
+} 

@@ -1,0 +1,65 @@
+/*******************************
+     User Global Variables
+*******************************/
+
+/*-------------------
+     Fonts
+--------------------*/
+@font-face {
+  font-family: 'Goudy1911';
+  src: url('goudy1911.woff2') format('woff2'),
+       url('goudy1911.woff') format('woff'),
+       url('goudy1911.otf') format('opentype');
+}
+@googleFontFamily  : 'https://fonts.googleapis.com/css?family=Lora:400,400i,700|Yanone+Kaffeesatz:400,700';
+@headerFont        : 'Lora', 'Helvetica Neue', Arial, Helvetica, sans-serif; 
+@pageFont          : 'Lora', 'Helvetica Neue', Arial, Helvetica, sans-serif;
+@fontSmoothing     : antialiased;
+
+@importGoogleFonts: true;
+
+/*-------------------
+    Base Sizes
+--------------------*/
+
+@emSize      : 18px;
+@fontSize    : 18px;
+
+/*-------------------
+    Site Colors
+--------------------*/
+
+/*---  Colors  ---*/
+@blue             : #3B83C0;
+@green            : #5BBD72;
+@orange           : #CC702D;
+@pink             : #D9499A;
+@purple           : #564F8A;
+@red              : #D95C5C;
+@teal             : #00B5AD;
+@yellow           : #F2C61F;
+
+@black            : #1B1C1D;
+@grey             : #CCCCCC;
+@white            : #FFFFFF;
+
+
+/*-------------------
+        Page
+--------------------*/
+
+@pageBackground      : #FFFFFF;
+@pageOverflowX       : hidden;
+
+@lineHeight          : 1.4285em;
+@textColor           : #4D3726;
+
+/*-------------------
+       Links
+--------------------*/
+
+@linkColor           : #A33905;
+@linkUnderline       : none;
+@linkHoverColor      : darken(saturate(@linkColor, 20), 15, relative);
+@linkHoverUnderline  : @linkUnderline;
+

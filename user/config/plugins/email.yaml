@@ -1,0 +1,17 @@
+enabled: true
+from: lemexique@papalote.net
+from_name: 'Le Mexique Contact Web'
+to: corinroyal@gmail.com
+to_name: 'Corin Royal Drummond'
+mailer:
+  engine: smtp
+  smtp:
+    server: mail.papalote.net
+    port: 587
+    encryption: tls
+    user: lemexique@papalote.net
+    password: Pandora7
+  sendmail:
+    bin: /usr/sbin/sendmail
+content_type: text/plain
+debug: false

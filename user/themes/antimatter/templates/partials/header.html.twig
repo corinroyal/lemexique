@@ -1,0 +1,10 @@
+<header id="logo">
+    <a href="{{ base_url_absolute }}">
+        {% if site.logo.image %}
+        	<img src="{{site.logo.image }}" alt="Le Mexique a la Carte Logo">
+        {% endif %}
+        {% if site.logo.text %}
+        	<h1>{{ site.logo.text }}</h1>
+        {% endif %}
+    </a>
+</header>

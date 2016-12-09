@@ -1,0 +1,11 @@
+email: lemexiquealacarte@gmail.com
+access:
+  admin:
+    login: true
+    super: true
+  site:
+    login: true
+fullname: 'Josee Turbis'
+title: 'Site Owner'
+state: enabled
+hashed_password: $2y$10$a6DH4EBHB18j2qrAJQjWSuSAb3gKD2DHoqAfNiWVPCFM.KqfuBsuC
